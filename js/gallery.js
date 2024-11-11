@@ -14,6 +14,9 @@ function selectedFlower(flower, caption){
   const img = document.querySelector('.displayImage');
   img.src = `images/flowers-${flower}.jpg`;
   figcaption.innerText = caption;
+
+  const body = document.querySelector('body');
+  body.style.backgroundImage = `url(images/flowers-${flower}.jpg)`;
 }
 
 const thumbnails = document.querySelector('.thumbnails');
